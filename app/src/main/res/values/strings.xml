@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GastosMensual</string>
+    <string name="registro_de_gasto_mensual">Registro de gasto mensual</string>
+    <string name="registrar_gasto_mensual">Registrar Gasto Mensual</string>
+    <string name="consultar_gasto_de_meses_anteriores">Consultar gasto de meses anteriores</string>
+    <string name="comparar_gasto_mensual">Comparar gasto mensual</string>
+
+
+    <string name="Agua">Agua</string>
+    <string name="Transporte">Transporte</string>
+    <string name="Electricidad">Electricidad</string>
+    <string name="Telecomunicaciones">Telecomunicaciones</string>
+    <string name="Fecha">Fecha</string>
+    <string name="Gas">Gas</string>
+    <string name="ingrese_gastos_correspondientes">Ingrese gastos correspondientes</string>
+    <string name="volver_a_menu_principal">Volver a Menu Principal</string>
+
+
+</resources>

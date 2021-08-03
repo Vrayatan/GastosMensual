@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3E3E3E"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-54dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#AA9A61"
+            android:gravity="center_horizontal"
+            android:text="@string/ingrese_gastos_correspondientes"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="298dp"
+            android:layout_height="264dp"
+            android:background="#9EA7E8"
+            android:orientation="vertical"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/tnFecha"
+                style="?android:spinnerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="#26BCCA"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="@string/Fecha"
+                android:textSize="16sp"
+                android:onClick="openDatePicker"/>
+
+            <EditText
+                android:id="@+id/tnAgua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="@string/Agua"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#494949"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/tnGas"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#3C3C3C"
+                android:backgroundTint="#26BCCA"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="@string/Gas"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#494949"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/tnElectricidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="@string/Electricidad"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#494949"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/tnTransporte"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#3C3C3C"
+                android:backgroundTint="#26BCCA"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="@string/Transporte"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#494949"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/tnTlcom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="@string/Telecomunicaciones"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#494949"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="343dp"
+            android:layout_height="222dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="crearProducto"
+                android:text="@string/registrar_gasto_mensual"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Historial"
+                android:text="@string/consultar_gasto_de_meses_anteriores"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Volver"
+                android:text="@string/volver_a_menu_principal"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
